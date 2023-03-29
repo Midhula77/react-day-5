@@ -8,10 +8,11 @@ import Add from './Components/Add';
 function App() {
   return (
     <div className="App">
-      <StudentApp/>
+      <StudentApp />
       <Routes>
-        <Route path={'/view'} element={<View/>}></Route>
-        <Route path={'/add'} element={<Add/>}></Route>
+        <Route path='/View' element={<View />} />
+        <Route path='/Add' element={<Add data={{ id: '', name: '', grade: '' }}
+          method='post' />} />
       </Routes>
     </div>
   );
