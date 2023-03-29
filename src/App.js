@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import StudentApp from './Components/StudentApp';
+import StudentApp from './Components/Books';
 import { Route, Routes } from 'react-router-dom';
 import View from './Components/View';
 import Add from './Components/Add';

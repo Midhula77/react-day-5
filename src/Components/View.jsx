@@ -38,19 +38,23 @@ const View = () => {
     <Table>
       <TableHead>
         <TableRow>
-          <TableCell >ID</TableCell>
-          <TableCell >NAME</TableCell>
-          <TableCell>GRADE</TableCell>
-          <TableCell >UPDATE</TableCell>
-          <TableCell>DELETE</TableCell>
+          <TableCell >Genre</TableCell>
+          <TableCell >BookTitle</TableCell>
+          <TableCell>Author</TableCell>
+          <TableCell >Publishedby</TableCell>
+          <TableCell >Published month/yr</TableCell>
+
         </TableRow>
       </TableHead>
       <TableBody>
         {students.map((value, index) => {
           return <TableRow key={index}>
-            <TableCell >{value.id}</TableCell>
-            <TableCell >{value.name}</TableCell>
-            <TableCell >{value.grade}</TableCell>
+            <TableCell >{value.genre}</TableCell>
+            <TableCell >{value.booktitle}</TableCell>
+            <TableCell >{value.author}</TableCell>
+            <TableCell >{value.Publishedby}</TableCell>
+            <TableCell >{value.published}</TableCell>
+
             <TableCell>
               <Button variant='contained'
                 color='success'

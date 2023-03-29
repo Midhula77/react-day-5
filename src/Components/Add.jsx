@@ -38,14 +38,27 @@ const Add = (props) => {
   return (
     <div>
       <br />
-      <TextField label='Name' name='name' variant='outlined'
-        value={input.name} onChange={inputHandler} />
+      <TextField label='Genre' name='genre' variant='outlined'
+        value={input.genre} onChange={inputHandler} />
       <br />
       <br />
-      <TextField label='Grade' name='grade' variant='outlined'
-        value={input.grade} onChange={inputHandler} />
+      <TextField label='Book Title' name='book title' variant='outlined'
+        value={input.booktitle} onChange={inputHandler} />
       <br />
       <br />
+      <TextField label='Author' name='author' variant='outlined'
+        value={input.Author} onChange={inputHandler} />
+      <br />
+      <br />
+      <TextField label='Publishedby' name='publishedby' variant='outlined'
+        value={input.Publishedby} onChange={inputHandler} />
+      <br />
+      <br />
+      <TextField label='Published month/yr' name='published month/yr' variant='outlined'
+        value={input.Published } onChange={inputHandler} />
+      <br />
+      <br />
+    
       <Button variant='contained' onClick={readValues}
         color='success'>Submit</Button>
     </div>
